@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-MAINTAINER Benjamin Kendinibilir <bkendinibilir@mac.com>
+LABEL maintainer "Benjamin Kendinibilir <bkendinibilir@mac.com>"
 
 ENV VERSION 2.7
 ENV USER jenkins
