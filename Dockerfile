@@ -13,7 +13,8 @@ RUN chmod 755 /usr/local/bin/jenkins-jnlp-slave
 
 RUN set -x \
     && apk upgrade --update \
-    && apk add --no-cache curl
+    && apk add --no-cache curl \
+    && apk add --no-cache make git
 
 USER jenkins
 WORKDIR /home/jenkins
