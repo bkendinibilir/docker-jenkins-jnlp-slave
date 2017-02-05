@@ -16,7 +16,7 @@ clean:
 	docker rmi ${REGISTRY}/${NAME}:${VERSION}
 
 push: build
-	gcloud docker -- push ${REGISTRY}/${NAME}:${VERSION}
+	docker push ${REGISTRY}/${NAME}:${VERSION}
 
 shell: buildwithcache
 	docker run -ti --rm ${REGISTRY}/${NAME}:${VERSION} /bin/sh
