@@ -16,7 +16,7 @@ RUN set -x \
     && apk add --no-cache curl \
     && apk add --no-cache make git
 
-USER jenkins
-WORKDIR /home/jenkins
+USER $USER
+WORKDIR /home/$USER
 
 ENTRYPOINT ["jenkins-jnlp-slave"]
