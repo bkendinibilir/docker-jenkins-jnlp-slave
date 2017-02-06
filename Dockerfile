@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-alpine
 LABEL maintainer "Benjamin Kendinibilir <bkendinibilir@mac.com>"
 
-ENV VERSION 2.7
+ENV REMOTING_VERSION 2.7
 ENV USER jenkins
 ENV HOME /home/jenkins
 
